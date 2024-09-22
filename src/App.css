@@ -1,0 +1,26 @@
+.main_box {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.box_item {
+  font-size: 20px;
+}
+
+.box_item:hover {
+  color: #f25835;
+}
+
+.box_none {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box_none_text {
+  font-size: 30px;
+  color: #e4bbf1;
+}

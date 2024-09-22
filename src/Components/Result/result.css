@@ -1,0 +1,45 @@
+.box_list {
+  margin-top: 30px;
+}
+
+.film_items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.film_item {
+  max-width: 300px;
+  background: #f25835;
+  color: #161827;
+  border: 1px solid #f3f0e0;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.film_item span {
+  color: #0f7cbf;
+}
+
+.item_img {
+  max-width: 200px;
+}
+
+.item_title,
+.item_age {
+  text-align: center;
+}
+
+.add_item_btn {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 4px 10px;
+  background: #455918;
+}
+
+.add_item_btn:hover {
+  background: #c1f20f;
+}
