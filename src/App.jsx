@@ -1,4 +1,5 @@
 import "./App.css";
+import Card from "./Components/Card/Card";
 import Favorite from "./Components/favorite/Favorite";
 import MainPage from "./Components/MainPage/MainPage";
 import { Link, Routes, Route } from "react-router-dom";
@@ -16,6 +17,7 @@ function App() {
       </div>
       <Routes>
         <Route path="/favorite" element={<Favorite />} />
+        <Route path="/info" element={<Card />} />
         <Route path="*" element={<MainPage />} />
       </Routes>
     </>

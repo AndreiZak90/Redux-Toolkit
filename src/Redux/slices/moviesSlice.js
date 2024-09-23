@@ -23,7 +23,15 @@ const moviesSlice = createSlice({
   },
   reducers: {
     addMovie(state, action) {
+      if (state.moviesFavorite.includes(action.payload)) return;
       state.moviesFavorite.push(action.payload);
+    },
+    delMovie(state, action) {
+      console.log(action.payload);
+      const newState = state.moviesFavorite.filter(
+        (item) => item.imdbID !== action.payload
+      );
+      state.moviesFavorite = newState;
     },
   },
   extraReducers: (builder) => {
@@ -43,5 +51,5 @@ const moviesSlice = createSlice({
   },
 });
 
-export const { addMovie } = moviesSlice.actions;
+export const { addMovie, delMovie } = moviesSlice.actions;
 export default moviesSlice.reducer;

@@ -9,15 +9,14 @@
 }
 
 .film_item {
-  max-width: 300px;
+  position: relative;
+  width: 300px;
   background: #f25835;
   color: #161827;
   border: 1px solid #f3f0e0;
   padding: 15px;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .film_item span {
@@ -42,4 +41,20 @@
 
 .add_item_btn:hover {
   background: #c1f20f;
+}
+
+.item_del {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  z-index: 99;
+  border: 1px solid black;
+  background: red;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.item_del:hover {
+  background: black;
+  color: #f25835;
 }
